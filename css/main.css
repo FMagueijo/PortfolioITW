@@ -145,3 +145,33 @@ li{
     margin: 0;
     padding: 0px 40px;
 }
+
+.myContainer{
+    background-color: black; border-radius: 10px; margin: 20px 50px auto; padding: 40px;
+    margin-bottom: 0;
+}
+
+:root {
+  --linkBack: #3B3B98;
+  --linkVisited: #3B3B98; 
+  --linkText: #ffffff;
+}
+
+
+a.myLink:visited{
+    background-color: var(--linkVisited);
+}
+
+a.myLink{
+    background-color: var(--linkBack);
+    color: var(--linkText);
+    padding: 2px;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+a.myLink:hover  {
+    background-color: var(--linkText);
+    color: var(--linkBack);
+    transition: .2s linear;
+}
