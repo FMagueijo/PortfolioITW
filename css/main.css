@@ -7,15 +7,15 @@ h1, h2, h3, h4, h5, h6, p{
     color: white;
 }
 
-html, body{
+body{
     font-family: 'ztgapha';
-    background-color: #0b0b0b;
+    background-color: #131313;
     color: white;
     height: 100%;
     overflow-x: hidden;
 
     margin: 0; padding: 0; height: 100%; width: 100%;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 footer{
@@ -45,38 +45,50 @@ footer{
     padding-bottom: 25px;
 }
 
+
 @media screen and (min-width:600px){
     
 .newsContainer{
-    background-color: black;
+    
+    background-color: #131313;
     min-height: 350px;
     width: 100%;
     border-radius: 10px;
-    border: .5px solid #232323;
+    border: .5px solid rgb(60, 60, 60);
     cursor: pointer;
     overflow-x: scroll;
 }
 
 }
 nav{
-    background-color: black;
     position: sticky;
     margin: 0px 25px;
     height: 80px;
     border-bottom: 1px  solid #232323;
 
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(15px);
 }
 
 .navbar-collapse, .navbar-nav, .nav-link {
     height: 100%;
 }
 
+
 @media screen and (max-width:991.98px) {
-    
-.navbar-nav {
-    background-color: black; padding-bottom: 25px; min-height: 250px; 
+.bg-dark{
+    background-color: black !important;
 }
+.navbar-nav {
+    background-color: black;padding-bottom: 25px; min-height: 250px; 
+}
+li.nav-item {
+    width: 50%;
+}
+}
+
+
+.bg-dark{
+    background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .nav-link{
@@ -143,11 +155,19 @@ li{
 
 .fixed-top{
     margin: 0;
-    padding: 0px 40px;
+    padding: 0px 60px;
+}
+
+.container{
+    width: 100%;
+}
+
+.col, .row{
+    width: 100%;
 }
 
 .myContainer{
-    background-color: black; border-radius: 10px; margin: 20px 50px auto; padding: 40px;
+    background-color: black; border-radius: 10px; margin: 50px 50px; padding: 40px;
     margin-bottom: 0;
 }
 
