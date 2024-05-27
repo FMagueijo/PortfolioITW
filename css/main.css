@@ -59,6 +59,15 @@ footer{
     overflow-x: scroll;
 }
 
+.myOtherContainer{
+    
+    background-color: #131313;
+    
+    border-radius: 10px;
+    border: .5px solid rgb(60, 60, 60);
+    min-height: fit-content;
+}
+
 }
 nav{
     position: sticky;
