@@ -45,18 +45,28 @@ footer{
     padding-bottom: 25px;
 }
 
+.newsContainer{
+        
+        background-color: #131313;
+        min-height: 350px;
+        width: 100%;
+        border-radius: 10px;
+        border: .5px solid rgb(60, 60, 60);
+        cursor: pointer;
+        overflow-x: scroll;
+}
 
 @media screen and (min-width:600px){
+        
     
-.newsContainer{
-    
-    background-color: #131313;
-    min-height: 350px;
-    width: 100%;
-    border-radius: 10px;
-    border: .5px solid rgb(60, 60, 60);
-    cursor: pointer;
-    overflow-x: scroll;
+
+
+}
+
+
+.hobbies{
+    display: flex; width: 100%;	gap: 25px; align-items: center; justify-content: center;
+    flex-direction: row;
 }
 
 .myOtherContainer{
@@ -68,6 +78,31 @@ footer{
     min-height: fit-content;
 }
 
+input.form-control, textarea.form-control, button.form-control{
+    background-color: #131313 !important;
+    color: white !important;
+    border: .5px solid rgb(60, 60, 60) !important;
+    transition: .3s linear;
+    
+}
+
+button.form-control:hover{
+    background-color: white !important;
+    color: #131313 !important;
+    border-bottom: 100% solid white !important;
+    transition: .3s linear;
+}
+
+
+
+::placeholder {
+    color: rgb(147, 147, 147)  !important;
+    opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: rgb(60, 60, 60)  !important;
+    opacity: 1; /* Firefox */
 }
 nav{
     position: sticky;
@@ -82,17 +117,37 @@ nav{
     height: 100%;
 }
 
+.containerHolder{
+    display: flex; width: 100%; gap: 25px;
+}
 
 @media screen and (max-width:991.98px) {
-.bg-dark{
-    background-color: black !important;
-}
-.navbar-nav {
-    background-color: black;padding-bottom: 25px; min-height: 250px; 
-}
-li.nav-item {
-    width: 50%;
-}
+    .bg-dark{
+        background-color: black !important;
+    }
+    .navbar-nav {
+        background-color: black;padding-bottom: 25px; min-height: 250px; 
+    }
+    li.nav-item {
+        width: 50%;
+    }
+
+    .hobbies{
+            display: flexbox; width: 100%; gap: 25px; align-items: center; justify-content: center;
+            flex-direction: column;
+    }
+
+
+    .containerHolder{
+        display: flex; width: 100%; gap: 25px;
+        flex-direction: column;
+    }
+
+        
+    .newsContainer{
+            height: fit-content !important;
+            margin-bottom: 25px;
+    }
 }
 
 
